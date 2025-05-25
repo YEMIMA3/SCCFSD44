@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natha Yemima's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+     <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+      <img src="images/vennelaa.jpg" alt="My photo" class="profile-pic" />
+      <div class="social-icons">
+        <a href="#" style="--index: 1"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="--index: 2"><i class="fab fa-instagram"></i></a>
+        <a href="#" style="--index: 3"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <nav>
+        <a href="#hero" onclick="showSection('hero')">Home</a>
+        <a href="#about" onclick="showSection('about')">About</a>
+        <a href="#projects" onclick="showSection('projects')">Projects</a>
+        <a href="#contact" onclick="showSection('contact')">Contact</a>
+      </nav>
+    </div>
+    
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero">
+        <p class="intro">Hi There!! It's Me</p>
+        <p class="name">Natha Yemima</p>
+        <div class="me">
+          Computer Science and Engineering Student.<br />
+          Graduating in 2027 👨‍🎓<br />
+          Currently training to become a <strong>Web Developer.</strong><br />
+          <b style="font-size: 30px">I can make complex</b> 🌐
+        </div>
+        <img src="images/vennelaa.jpg" alt="My photo" class="profile-pic" />
+        <button onclick="downloadCV()">Download CV</button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2 style="text-align: center; font-size: 50px; color: orangered;">
+        About Me
+      </h2>
+      <h2 style="font-size: 45px; color: white; margin-top: 20px; margin-left: 10px; line-height: 50px" class="about-anim" >
+        I'm Natha Yemima, a CSE student and training to become a Web Developer!
+      </h2>
+      <p style="border-bottom: 2px solid #555; padding-bottom: 30px; font-size: 26px; color: white; line-height: 45px" class="about-anim" >
+        I am a Computer Science and Engineering student with a deep passion for web development. Joining the coding club has been a remarkable opportunity to further develop my skills. The team has been incredibly supportive, providing a learning environment that goes beyond traditional classroom teachings. Through this experience, I have acquired valuable knowledge and practical skills that have broadened my understanding of web development, and I’m eager to continue growing and contributing to exciting projects.
+      </p>
+      <div class="details-container">
+        <div class="details-column">
+          <div class="detail-item"><strong>Name:</strong> Natha Yemima</div>
+          <div class="detail-item" ><strong>Contact:</strong> 8019537876</div>
+        </div>
+        <div class="details-column">
+          <div class="detail-item"><strong>From:</strong> Tadepalligudem, AP</div>
+          <div class="detail-item"><strong>Email:</strong> yemimanatha6@gmail.com</div>
+        </div>
+      </div>
+      <br />
+     <h2 style="margin-left: 10px; color: white; font-size: 40px;" class="about-anim">
+        <u>My Skills</u>
+      </h2>
+      <div class="skills">
+        <ul>
+          <li>C language</li>
+          <li>Basics in Java</li>
+          <li>Basics in SQL</li>
+          <li>Basics in Python</li>
+          <li>Basics in DSA</li>
+          <li>Basics in HTML</li>
+        </ul>
+      </div>
+     <h2 style="margin-left: 10px; color: white; font-size: 40px;" class="about-anim">
+         <u>Certifications</u>
+      </h2>
+      <div class="certificate">
+        <ul>
+          <li><strong>Introduction to CyberSecurity</strong>--<small>CISCO Networking Academy</small></li>
+          <li><strong>Programming Essentials in C</strong>--<small>CISCO Networking Academy</small></li>
+          <li><strong>Python Essentials</strong>--<small>CISCO Networking Academy</small></li>
+        </ul>
+      </div>
+     <h2 style="margin-left: 10px; color: white; font-size: 40px;" class="about-anim">
+        <u>My Favourites</u>
+      </h2>
+      <p class="about-anim">* My favourite song is Enno enoo varnala...</p>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+      <p class="about-anim">* My favourite movie is Hi Nanna!</p>
+      <video width="320" height="240" style="margin-top: 7px; margin-left: 20px" controls>
+        <source src="hi_nanna.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 style="margin-top: 40px; text-align: center; font-size: 50px">
+        Projects
+      </h2>
+      <table class="table" border="2">
+        <tr>
+          <th>Project Name</th>
+          <th>Description</th>
+          <th>Technology Used</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+        <tr>
+          <td>ToletMate Website</td>
+          <td>Connects house owners and house finders for rent.</td>
+          <td>HTML, CSS, JavaScript</td>
+          <td>Completed</td>
+          <td><a href="#toletmate" class="project-btn">View Project</a></td>
+        </tr>
+        <tr>
+          <td>Meals Giving Platform</td>
+          <td>Connects restaurants, volunteers, and charities for food donations.</td>
+          <td>HTML, CSS, JavaScript</td>
+          <td>Completed</td>
+          <td><a href="#saveaplate" class="project-btn">View Project</a></td>
+        </tr>
+      </table>
+      <h2 id="toletmate" style="margin-left: 20px; font-size:35px; ">
+        ToletMate Website -<small>Connects house owner and house finders for rent</small>
+      </h2>
+      <div class="img">
+        <img src="images/toletmate.png" alt="ToletMate Website Screenshot" />
+        <img src="images/owner1.png" alt="ToletMate Owner Page Screenshot 1"  />
+        <img src="images/owner2.png" alt="ToletMate Owner Page Screenshot 2"  />
+        <img src="images/owner3.png" alt="ToletMate Owner Page Screenshot 3" />
+        <img src="images/finder1.png" alt="ToletMate Finder Page Screenshot 1"  />
+        <img src="images/finder2.png" alt="ToletMate Finder Page Screenshot 2" />
+        <img src="images/finder3.png" alt="ToletMate Finder Page Screenshot 3"  />
+      </div>
+      <h2 id="saveaplate" style="margin-left: 20px; margin-top: 40px; font-size:35px;">
+        Save A Plate Website -<small>Connects restaurants, volunteers, and charities for food donations.</small>
+      </h2>
+      <div class="img">
+        <img src="images/Meals.png" alt="Save A Plate Website Screenshot" />
+        <img src="images/Meals2.png" alt="Save A Plate Website Screenshot 2"  />
+        <img src="images/restaurant.png" alt="Save A Plate Restaurant Page"  />
+        <img src="images/charity.png" alt="Save A Plate Charity Page" />
+        <img src="images/drivers.png" alt="Save A Plate Drivers Page"  />
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="form-container">
+        <h2 style="text-align: center; font-size: 50px">Contact</h2>
+        <form id="contact-form">
+          <label for="name">Enter name:</label><br />
+          <input type="text" id="name" name="name" placeholder="Enter your name" /><br /><br />
+          <label for="phoneno">Enter phone:</label><br />
+          <input type="tel" id="phoneno" name="phoneno" placeholder="Enter your phone number" /><br /><br />
+          <label for="gmail">Enter email:</label><br />
+          <input type="email" id="gmail" name="gmail" placeholder="Enter your email" /><br /><br />
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" placeholder="Enter your message"></textarea><br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/marker.png" alt="Address Icon" />
+          <p><strong>Address</strong> Ganesh Nagar, Tadepalligudem, West Godavari, Andhra Pradesh-534101</p>
+        </div>
+        <div class="contact-item">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Phone Icon" />
+          <p><strong>Call Us</strong> +91 8019537876</p>
+        </div>
+        <div class="contact-item">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/email.png" alt="Email Icon" />
+          <p><strong>Email Us</strong> yemimanathaa@gmail.com</p>
+        </div>
+      </div>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.9396451136786!2d81.52790599999997!3d16.829349999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37b4a7c88ae70b%3A0xf28531b69c45a58e!2sGanesh%20Nagar%2C%20Tadepalligudem%2C%20Andhra%20Pradesh%20534101!5e0!3m2!1sen!2sin!4v1748085085658!5m2!1sen!2sin" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="modal" id="form-modal">
+        <div class="modal-content">
+          <p id="modal-message">Thank you for your message!</p>
+          <button onclick="closeModal()">Close</button>
+        </div>
+      </div>
+    </section>
+
+    <button id="back-to-top" onclick="scrollToTop()">↑</button>
+
+   <script src="script1.js"></script>
+  </body>
+</html>
